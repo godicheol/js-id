@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6,p,span,ul,ol,li,table,thead,tbody,tr,th,td,img,canvas{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input,textarea,label{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./index.js"></script>
+    <script>
+        var diff = 9 * 60 * 60 * 1000; // kr
+        var res = jsId.generate(16, diff);
+
+        console.log("genarate", res);
+
+        var res2 = jsId.parse(res);
+
+        console.log("parse", res2);
+    </script>
+</body>
+
+</html>
